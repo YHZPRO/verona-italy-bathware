@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore refined bathroom inspiration and bathware collections from Verona Italy Bathware.">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>Verona Italy Bathware | Everyday Luxury, Beautifully Made</title>
+  <style>
+    :root {
+      --cream: #f5f1e9;
+      --paper: #fffdf8;
+      --ink: #20231f;
+      --muted: #686b63;
+      --gold: #a88958;
+      --line: #ded8cc;
+      --green: #35483d;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.6; }
+    a { color: inherit; }
+    .announcement { background: var(--green); color: #fff; text-align: center; padding: 9px 16px; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; }
+    header { padding: 20px 6vw; display: flex; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid var(--line); background: rgba(245,241,233,.95); }
+    .brand { text-decoration: none; display: flex; align-items: center; gap: 12px; }
+    .brand-mark { width: 43px; height: 43px; border: 1px solid var(--gold); color: var(--gold); display: grid; place-items: center; font: 1.25rem var(--serif); border-radius: 50%; }
+    .brand-name { font: 1.02rem var(--serif); letter-spacing: .08em; text-transform: uppercase; line-height: 1.25; }
+    .brand-name small { display: block; margin-top: 5px; color: var(--muted); font: .62rem var(--sans); letter-spacing: .19em; }
+    nav { display: flex; flex-wrap: wrap; gap: 25px; align-items: center; }
+    nav a { font-size: .78rem; text-decoration: none; letter-spacing: .08em; text-transform: uppercase; }
+    nav a:hover { color: var(--gold); }
+    .nav-cta, .button { display: inline-block; background: var(--green); color: white; text-decoration: none; padding: 13px 21px; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--green); transition: .2s ease; }
+    .nav-cta:hover, .button:hover { background: #26362d; transform: translateY(-1px); }
+    .hero { min-height: 590px; display: grid; grid-template-columns: 1fr 1fr; }
+    .hero-copy { padding: 90px 7vw 80px 10vw; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .22em; font-size: .7rem; font-weight: bold; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { font: clamp(3rem, 5vw, 5.4rem)/1.03 var(--serif); font-weight: normal; letter-spacing: -.04em; margin: 20px 0; }
+    h1 em { color: var(--gold); font-weight: normal; }
+    .hero-copy p { color: var(--muted); max-width: 430px; font-size: 1rem; margin-bottom: 29px; }
+    .hero-image { min-height: 500px; background: #d8d0c1 url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1500&q=85') center/cover; }
+    .hero-note { margin-top: 24px; color: var(--muted); font-size: .73rem; letter-spacing: .04em; }
+    .intro { text-align: center; padding: 90px 20px 60px; max-width: 780px; margin: auto; }
+    h2 { font: clamp(2.1rem, 3.5vw, 3.4rem)/1.15 var(--serif); font-weight: normal; letter-spacing: -.025em; }
+    .intro p, .section-head p { color: var(--muted); max-width: 610px; margin: 0 auto; }
+    .collection { padding: 35px 6vw 100px; }
+    .section-head { text-align: center; margin: 0 auto 38px; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .product { background: var(--paper); padding-bottom: 24px; }
+    .product img { width: 100%; height: 280px; display: block; object-fit: cover; background: #ddd5c8; }
+    .product h3 { font: 1.35rem var(--serif); font-weight: normal; margin: 20px 18px 6px; }
+    .product p { color: var(--muted); font-size: .86rem; margin: 0 18px 16px; }
+    .text-link { margin: 0 18px; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 4px; }
+    .story { display: grid; grid-template-columns: 1fr 1fr; background: #e8e1d5; }
+    .story-image { min-height: 470px; background: url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85') center/cover; }
+    .story-copy { padding: 80px 9vw 70px 7vw; align-self: center; }
+    .story-copy p { color: var(--muted); }
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding: 75px 8vw; text-align: center; }
+    .value-mark { color: var(--gold); font: 2rem var(--serif); }
+    .values h3 { font: 1.3rem var(--serif); font-weight: normal; margin: 12px 0 8px; }
+    .values p { color: var(--muted); font-size: .88rem; max-width: 300px; margin: auto; }
+    .contact { background: var(--green); color: white; text-align: center; padding: 85px 20px; }
+    .contact .eyebrow { color: #d9c29a; }
+    .contact h2 { max-width: 680px; margin: 16px auto; }
+    .contact p { color: #e1e5df; max-width: 560px; margin: 0 auto 26px; }
+    .contact .button { background: transparent; border-color: #d9c29a; }
+    .contact .button:hover { background: rgba(255,255,255,.1); }
+    footer { padding: 28px 6vw; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: .75rem; }
+    footer a { text-decoration: none; }
+    .notice { background: #fff3d8; color: #4f3d1b; border: 1px solid #e8d4a7; margin: 20px auto; padding: 12px 16px; max-width: 950px; font-size: .82rem; }
+    @media (max-width: 900px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav { gap: 16px; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { padding: 70px 8vw; }
+      .hero-image { min-height: 390px; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
+      .story { grid-template-columns: 1fr; }
+      .story-image { min-height: 350px; }
+      .story-copy { padding: 60px 8vw; }
+    }
+    @media (max-width: 520px) {
+      .announcement { font-size: .61rem; }
+      .brand-name { font-size: .9rem; }
+      nav { gap: 12px; }
+      nav a { font-size: .68rem; }
+      .nav-cta { padding: 10px 12px; }
+      .hero-copy { padding: 56px 7vw; }
+      .hero-image { min-height: 300px; }
+      .product-grid, .values { grid-template-columns: 1fr; }
+      .product img { height: 300px; }
+      .values { padding: 55px 8vw; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">Bathroom inspiration · Verona, Italy</div>
+  <header>
+    <a class="brand" href="#home" aria-label="Verona Italy Bathware home">
+      <span class="brand-mark">V</span>
+      <span class="brand-name">Verona Italy Bathware<small>Considered design · Everyday living</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#collection">Collections</a>
+      <a href="#about">Our approach</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Make an enquiry</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">A more beautiful daily ritual</span>
+        <h1>Spaces to <em>unwind.</em><br>Details to love.</h1>
+        <p>Discover considered bathware inspiration for bathrooms that feel calm, timeless and unmistakably personal.</p>
+        <a class="button" href="#collection">Explore the collection</a>
+        <div class="hero-note">A refined point of view on modern bathroom living.</div>
+      </div>
+      <div class="hero-image" role="img" aria-label="Elegant contemporary interior"></div>
+    </section>
+
+    <section class="intro">
+      <span class="eyebrow">Verona Italy Bathware</span>
+      <h2>Quiet luxury, down to the last detail.</h2>
+      <p>From sculptural silhouettes to clean, contemporary finishes, explore ideas that bring comfort, character and a little everyday luxury into your space.</p>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section-head">
+        <span class="eyebrow">Explore the possibilities</span>
+        <h2>Designed around your rituals</h2>
+        <p>Browse our featured bathware categories. Product availability and specifications can be added once confirmed by the business.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Contemporary bathtub in a calm neutral bathroom" loading="lazy">
+          <h3>Bathtubs</h3><p>Sculptural forms for a slower, more restorative soak.</p><a class="text-link" href="#contact">Ask about bathtubs</a>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Elegant modern bathroom interior" loading="lazy">
+          <h3>Showers</h3><p>Clean lines and considered details for daily refreshment.</p><a class="text-link" href="#contact">Ask about showers</a>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80" alt="Neutral bathroom design detail" loading="lazy">
+          <h3>Taps &amp; fittings</h3><p>Finishing touches that bring a room together.</p><a class="text-link" href="#contact">Ask about fittings</a>
+        </article>
+        <article class="product">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Modern bathroom vanity and interior styling" loading="lazy">
+          <h3>Vanity &amp; storage</h3><p>Beautifully balanced storage for a composed space.</p><a class="text-link" href="#contact">Ask about vanities</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-image" role="img" aria-label="Warm minimalist interior with natural materials"></div>
+      <div class="story-copy">
+        <span class="eyebrow">Our design philosophy</span>
+        <h2>Good design should feel as good as it looks.</h2>
+        <p>We believe the bathroom deserves the same care as every other room in the home. Thoughtful materials, harmonious shapes and practical details can turn everyday routines into something special.</p>
+        <p>This page is a starting point for the Verona Italy Bathware story. Add the company's real history, brands, showroom details and services here before launch.</p>
+        <a class="button" href="#contact">Start a conversation</a>
+      </div>
+    </section>
+
+    <section class="values" aria-label="Our priorities">
+      <div><div class="value-mark">01</div><h3>Thoughtful aesthetics</h3><p>Timeless inspiration with an emphasis on proportion, texture and calm.</p></div>
+      <div><div class="value-mark">02</div><h3>Everyday comfort</h3><p>Ideas for making daily routines feel more comfortable and considered.</p></div>
+      <div><div class="value-mark">03</div><h3>Personal guidance</h3><p>Get in touch to discuss your project and the products you are looking for.</p></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <span class="eyebrow">Your bathroom, your vision</span>
+      <h2>Let's find the right details for your space.</h2>
+      <p>Have a question about bathware or planning a bathroom project? Contact the team to discuss your needs.</p>
+      <!-- Replace the placeholder email below with the business's real, approved contact email before publishing. -->
+      <a class="button" href="mailto:REPLACE-WITH-REAL-EMAIL@example.com?subject=Bathware%20enquiry">Send an enquiry</a>
+      <div class="notice">Website draft: replace the placeholder email and verify the business name, products, images, and all business details before using this as the official company website.</div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year">2026</span> Verona Italy Bathware</span>
+    <span>Designed with care · Verona, Italy</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
